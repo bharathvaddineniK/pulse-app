@@ -1,9 +1,15 @@
-import { Redirect } from 'expo-router';
+import { Text, View } from "react-native";
 
-// This component will automatically redirect the user to the '(tabs)' layout.
-// This is a robust way to ensure the correct initial screen is loaded,
-// bypassing any potential caching issues with the router's default behavior.
 export default function Index() {
-  return <Redirect href="/(tabs)" />;
+  return (
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Text>Edit app/index.tsx to edit this screen.</Text>
+    </View>
+  );
 }
-
