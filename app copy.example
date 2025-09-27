@@ -11,7 +11,7 @@
     "ios": {
       "supportsTablet": true,
       "config": {
-        "googleMapsApiKey": "AIzaSyDZ_E5V0LzlslDWZKt1UpUMjT0807Rwy_I"
+        "googleMapsApiKey": "YOUR_GOOGLE_MAPS_API_KEY_HERE"
       }
     },
     "android": {
@@ -25,7 +25,7 @@
       "predictiveBackGestureEnabled": false,
       "config": {
         "googleMaps": {
-          "apiKey": "AIzaSyDZ_E5V0LzlslDWZKt1UpUMjT0807Rwy_I"
+          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY_HERE"
         }
       }
     },
@@ -46,8 +46,7 @@
             "backgroundColor": "#000000"
           }
         }
-      ],
-      "expo-font"
+      ]
     ],
     "experiments": {
       "typedRoutes": true,
