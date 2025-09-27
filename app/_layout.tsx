@@ -57,6 +57,7 @@ function RootLayoutNav() {
           headerShown: false,
           contentStyle: { backgroundColor: Colors.dark.background }
         }}>
+        {/* The key fix is to ensure the '(tabs)' route is explicitly defined */}
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
       </Stack>
