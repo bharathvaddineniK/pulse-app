@@ -6,9 +6,9 @@ import { useEffect } from 'react';
 import { StatusBar } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
+import Colors from '../constants/Colors';
 
 // --- Font Loading ---
-// We are loading the Inter font family as specified in the design document.
 import {
   Inter_400Regular,
   Inter_700Bold,
@@ -50,15 +50,17 @@ export default function RootLayout() {
 
 function RootLayoutNav() {
   return (
-    // SafeAreaProvider is essential for positioning content correctly on all devices,
-    // avoiding notches and the status bar.
     <SafeAreaProvider>
-      {/* Set the status bar text to white (light-content) as per the design document */}
       <StatusBar barStyle="light-content" />
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack
+        screenOptions={{
+          headerShown: false,
+          contentStyle: { backgroundColor: Colors.dark.background }
+        }}>
+        <Stack.Screen name="(tabs)" />
         <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
       </Stack>
     </SafeAreaProvider>
   );
 }
+
